@@ -9,7 +9,7 @@ function setup() {
 function draw() {
   background(220);
   textFont(f1,48);
-  text('hello',width/2, height/2);
+  text('Jessica',width/2, height/2);
   textFont(f2,40);
-  text('goodbye',width/2, height/2+60);
+  text('Madden',width/2, height/2+60);
 }
