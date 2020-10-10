@@ -53,25 +53,29 @@ function draw() {
 
       fill('black');
       arc(330, 380, 70, 190, PI, TWO_PI);
+//set up placement of moon for next state
+      x = width / 2;
+      y = height;
+
       break;
 
     case 1:
       background('black')
       textSize(30)
-      text("Until the sun sets...", 100, 300);
+      text("Until the sun sets, and noise causes a change...", 100, 300);
 
 
       fill('yellow');
-      arc(100, 80, 80, 100, 20, PI + HALF_PI, PIE);
-      x = width / 2;
-      y = height;
-      x = x;
+      arc(x, y, 80, 100, 20, PI + HALF_PI, PIE);
+
+    //  x = x;
       // Moving up at a constant speed
       y = y - 1;
 
       // Hold
       if (y < 60) {
         y = 60;
+        vol = (mic.getLevel()).toFixed(2); // returned level is between 0 and 1
 
         if (vol > 0.2) {
           state = 2
@@ -164,9 +168,9 @@ function draw() {
 function mouseReleased() {
   state++;
   if (state > 2) state = 0;
-
+}
   function touchStarted() {
     getAudioContext().resume();
-  }
+
 
 }
