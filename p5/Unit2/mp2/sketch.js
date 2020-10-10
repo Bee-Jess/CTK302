@@ -61,7 +61,7 @@ function draw() {
 
     case 1:
       background('black')
-      textSize(30)
+      textSize(10)
       text("Until the sun sets, and noise causes a change...", 100, 300);
 
 
