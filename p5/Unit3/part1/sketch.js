@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  background('gray');
+  background('black');
   textFont(f1,48);
   cars.push(new Car());
 
@@ -39,7 +39,7 @@ class Car {
   //methods
   display(){
     fill(this.r, this.g, this.b, this.a);
-    text("happy Halloween",this.pos.x, this.pos.y, 20);
+    text("HAPPY HALLOWEEN",this.pos.x, this.pos.y, 100);
   }
   move(){
     this.pos.add(this.vel);
