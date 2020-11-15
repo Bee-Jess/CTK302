@@ -51,8 +51,6 @@ function draw() {
 
     case 5:
       text("Listen to song 3", 100, 100);
-      song2.play();
-      state = 3;
       break;
 
   }
