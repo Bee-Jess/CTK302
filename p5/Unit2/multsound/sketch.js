@@ -60,6 +60,10 @@ function draw() {
 
 function mouseReleased() {
   state++;
-  if (state > 2) state = 0;
+  if (state > 5) state = 0;
+
+  song1.pause();
+  song2.pause();
+  song3.pause();
 
 }
