@@ -12,11 +12,11 @@ function setup() {
 
   // HERE is the call to get the weather.
 
-  var myCityString = 'api.openweathermap.org/data/2.5/weather?zip=60458,us&units=imperial&';
+  var myCityString = 'https://api.openweathermap.org/data/2.5/weather?zip=60458,us&units=imperial&appid=ecb96c6f2772adc0320aaa567d9006dc';
 
   //You can also use "zipcode" - var myJSONString = 'https://api.openweathermap.org/data/2.5/weather?zip=61820,us&units=imperial&';
 
-  var myIDString = 'appid=552163a20dbff884c487a4c05dcd0756'; // USE YOUR ID HERE, take out the x's!!!
+  var myIDString = '552163a20dbff884c487a4c05dcd0756'; // USE YOUR ID HERE, take out the x's!!!
 
   var myBigString = myCityString + myIDString;
 
