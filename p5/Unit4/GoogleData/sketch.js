@@ -73,7 +73,7 @@ class Bubble {
 
 
 drive(){
-	this.pos.x + 5;
+	this.pos.x += 5;
 	if(this.pos.x > width) this.pos.x = 0;
 }
 
