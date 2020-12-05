@@ -16,7 +16,7 @@ function draw() {
       background('red');
       text("What do you get if you cross a pig and a cactus?", 250, 250, 350, 400);
       timer = timer + 1;
-      if (time > 5 * 60) {
+      if (time > 1 * 60) {
         state = 1;
         timer = 0;
 
