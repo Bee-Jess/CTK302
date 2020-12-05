@@ -6,7 +6,7 @@ var z = 0;
 var xPosition = 0;
 var yPosition = 0;
 
-let luigiImage;
+var luigiImage;
 var cars = [];
 var frogPos;
 
