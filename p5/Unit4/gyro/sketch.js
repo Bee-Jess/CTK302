@@ -13,7 +13,7 @@ function setup() {
 
   createCanvas(windowWidth, windowHeight);
 
-  ghostImage = loadImage("assets/ghost.jpg");
+  ghostImage = loadImage("assets/ghost.png");
   imageMode(CENTER);
   rectMode(CENTER);
 
