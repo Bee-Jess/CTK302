@@ -4,7 +4,7 @@ function setup() {
 
   // Tabletop stuff, for getting google spreadsheet data in.
   //let url = '1GtE3eoYVWBv9zMPoyettXzDCEv6qdNGKio_hgEh5duM'; // this is KEY of the URL from the sheet
-  let url = https: '1BsYhaY0-JoXRYUPzhlK0QJYdfWsIelJcR5Pnbq5_cdc';
+  let url = '1BsYhaY0-JoXRYUPzhlK0QJYdfWsIelJcR5Pnbq5_cdc';
   let settings = {
     key: url, // The url of the published google sheet
     callback: gotData, // A callback for when the data comes in
@@ -43,6 +43,7 @@ function draw() {
   // // iterate through the bubbles and display the objects!
   for (let i = 0; i < bubbles.length; i++) {
     bubbles[i].display();
+		bubbles[i].drive();
   }
 
 }
@@ -51,7 +52,7 @@ function draw() {
 // my Bubble class
 class Bubble {
 
-  constructor(myName, myShape) {
+  constructor(myName, MyHouse, myPet) {
     this.name = myName;
     this.house = myHouse;
     this.pet = myPet;
@@ -67,9 +68,16 @@ class Bubble {
     //  ellipse(this.pos.x, this.pos.y, 50, 50);}
   ellipse(this.pos.x, this.pos.y, 50, 50);
   text(this.Name, this.pos.x, this.pos.y);
-  text(this.House, this.pos.x, this.pos.y);
-  text(this.Pet, this.pos.x, this.pos.y);
+  text(this.House, this.pos.x, this.pos.y + 16);
+  text(this.Pet, this.pos.x, this.pos.y - 16);}
+
+
+drive(){
+	this.pos.x + 5;
+	if(this.pos.x > width) this.pos.x = 0;
 }
+
+
 
 
 }
